@@ -1,7 +1,5 @@
 import Marionette from 'backbone.marionette';
 import template from '../templates/item.jst';
-import _ from 'lodash';
-import axios from 'axios';
 
 export default Marionette.View.extend({
     template: template,
@@ -9,6 +7,7 @@ export default Marionette.View.extend({
         // This is simply here to simulate an external API
         // call to gather additional data.
         // One would never do this in real life.
+        // This would probably be an axios call.
         return new Promise((resolve, reject) => {
             setTimeout(
                 () => resolve(),
@@ -19,8 +18,8 @@ export default Marionette.View.extend({
     onDomRefresh() {
         const self = this;
         this.randomResolve().then(() => {
-           self.$('.lds-ring').hide();
-           self.$('.agency-data').show();
+            self.$('.lds-ring').hide();
+            self.$('.agency-data').show();
         });
     },
 
