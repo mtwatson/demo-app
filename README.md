@@ -1,3 +1,2 @@
-# Marionette-Webpack5
+# Demo App
 
-Salvage operation for https://github.com/marionettejs/marionette-integrations/tree/master/webpack2.
