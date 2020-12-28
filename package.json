@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve",
     "prebuild": "rm -rf ./public/",
-    "build": "npm run lint && webpack",
+    "build": "npm run lint-fix && webpack",
     "lint": "eslint app",
     "lint-fix": "eslint --fix app",
     "test": "echo test"
